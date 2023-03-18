@@ -25,7 +25,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">About</a>
               </li>
-              
+              <li class="nav-item">
+                <a class="nav-link" href="#">instruction</a>
+              </li>
                 
               </li>
              
@@ -40,7 +42,7 @@
           <img class="img-fluid" src="{% static "kkk.jpg" %}">
             <div class="card">
                 <div class="card-body">
-                    <form method = "GET" action="action">
+                    <form method = "GET" action="{% url 'submitquery' %}">
                         <div class="form-group">
                             <input type="search"class="form-control"name="query" id="query">
 
@@ -54,6 +56,12 @@
 
              </div>
         </div>
+    </div>
+    <div class="list-group">
+      <a href="#" class="list-group-item active">+ Addition</a>
+      <a href="#" class="list-group-item active">- Subtraction</a>
+      <a href="#" class="list-group-item active">/ Division</a>
+      <a href="#" class="list-group-item active">* Multiplication</a>
     </div>
 </div>
 <div class="container-fluid" style="margin-bottom: 20rem;">
